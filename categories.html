@@ -11,28 +11,120 @@
     <title>Categories</title>
 </head>
 <body>
-	<section class="landing-page">
-    	<!-- Nav Bar Section Begins -->
-		<nav>
-			<div class="logo">
-				LOGO
-			</div>
+	<!-- Nav Bar Section Begins -->
+	<nav>
+		<div class="logo">
+			<img src="./images/green-grocer-PhotoRoom.png" alt="logo" width="100%">
+		</div>
+		<div class="menu-items">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about.html">About Us</a></li>
+				<li><a href="#" class="active">Categories</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="call-to-action">
+			<ul>
+				<li><button type="button" class="btn btn-outline-success sign"><a href="./signup.html">Show now</a></button></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Social media links start -->
+	<div class="social-media">
+		<ul>
+			<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+			<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+			<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			<li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+			<li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+		</ul>	
+	</div>
+	<!-- Mobile nav bar starts -->
+	<div class="mobile-nav-bar">
+		<div class="logo">
+			<img src="./images/green-grocer-PhotoRoom.png" alt="logo" width="100%">
+		</div>
+		<i class="fa fa-bars" aria-hidden="true" onclick="toggleSideNav()"></i>
+		<div id="sideNav">	
 			<div class="menu-items">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
+					<li><a href="./about.html">About Us</a></li>
 					<li><a href="#" class="active">Categories</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</div>
-			<div class="call-to-action">
-				<ul>
-					<li><button type="button" class="btn btn-outline-success sign"><a href="./signup.html">Show now</a></button></li>
-				</ul>
+		</div>
+	</div>
+	<!-- Mobile nav bar ends -->
+	<!-- Nav Bar Section Ends -->
+
+
+	<!-- Categories starts -->
+	<h2>Categores</h2>
+	<section class="category-section">
+		<div class="categories">
+			<button><a href="#fruits">Fruits</a></button>
+			<button><a href="#vegetables">Vegetables</a></button>
+			<button><a href="#dairy">Dairy</a></button>
+			<button><a href="#fish">Fish</a></button>
+			<button><a href="#water-drinks">Water & Drinks</a></button>
+			<button><a href="#snacks">Snacks</a></button>
+		</div>
+		<section id="fruits">
+			<div class="fruit-flex">
+				<div class="fruit-flex-1">
+					<img  class="img-1" src="./images/apple-fruit-PhotoRoom.png" alt="" width="100%">
+					<h5>Apple</h5>
+					<p>$5.00</p>
+					<button>buy</button>
+				</div>
+				<div class="fruit-flex-2">
+					<img  class="img-2"src="./images/cherries-fruit-PhotoRoom.png" alt="" width="100%">
+				</div>
+				<div class="fruit-flex-3">
+					<img  class="img-3"src="./images/grapes-fruit-PhotoRoom.png" alt="" width="100%">
+				</div>
 			</div>
-		</nav>
-		<!-- Nav Bar Section Ends -->
+		</section>
+		<section id="vegetables">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+		<section id="dairy">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+		<section id="fish">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+		<section id="water-drinks">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+		<section id="snacks">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
 	</section>
+	<!-- Categories ends -->
 
 
 			<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>

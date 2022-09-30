@@ -7,7 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./icons/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/responsive.css">
-		<title>My project</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<!-- Landing page begins -->
@@ -15,11 +16,11 @@
 			<!-- Nav Bar Section Begins -->
 			<nav>
 				<div class="logo">
-					LOGO
+					<img src="./images/green-grocer-PhotoRoom.png" alt="logo" width="100%">
 				</div>
 				<div class="menu-items">
 					<ul>
-						<li><a href="" class="active">Home</a></li>
+						<li><a href="#" class="active">Home</a></li>
 						<li><a href="./about.html">About Us</a></li>
 						<li><a href="./categories.html">Categories</a></li>
 						<li><a href="./contact.html">Contact</a></li>
@@ -31,6 +32,24 @@
 					</ul>
 				</div>
 			</nav>
+			<!-- Mobile nav bar starts -->
+			<div class="mobile-nav-bar">
+				<div class="logo">
+					<img src="./images/green-grocer-PhotoRoom.png" alt="logo" width="100%">
+				</div>
+				<i class="fa fa-bars" aria-hidden="true" onclick="toggleSideNav()"></i>
+				<div id="sideNav">	
+					<div class="menu-items">
+						<ul>
+							<li><a href="#" class="active">Home</a></li>
+							<li><a href="./about.html">About Us</a></li>
+							<li><a href="./categories.html">Categories</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile nav bar ends -->
 			<!-- Nav Bar Section Ends -->
 			<!-- Hero Section Begins -->
 			<div class="hero-section">
@@ -66,9 +85,62 @@
 			</ul>	
 		</div>
 		<!-- Social media links ends -->
-		<div class="choose">
-			
+		<div class="wrapper">
+			<h2>Our Services</h2>
+			<div class="services">
+				<div>
+					<i class="fa fa-cart-plus" aria-hidden="true"></i>
+					<p><span>Free Delivery</span><br>Free delivery to your location</p>
+				</div>
+				<div>
+					<i class="fa fa-hourglass" aria-hidden="true"></i>
+					<p><span>24/7 Support</span><br>Support 24 hours a day</p>
+				</div>
+				<div>
+					<i class="fa fa-shield" aria-hidden="true"></i>
+					<p><span>100% Secure payment</span><br>Payments are guaranteed</p>
+				</div>
+				<div>
+					<i class="fa fa-money" aria-hidden="true"></i>
+					<p><span>Money returns</span><br>Oneway order</p>
+				</div>
+			</div>
 		</div>
+		<div class="choose">
+
+		</div>
+		<!-- Testimonials -->
+		<h2>What People say about us</h2>
+		<section class="testimonials">
+			<div class="t-1">
+				<img src="./images/in-team-6.png" alt="" width="100%">
+				<h5>Jane Doe</h5>
+				<p>
+					"Lorem ipsum dolor sit, amet <br>
+					adipisicing elit. Maiores fugit ducimus<br>
+					tempore, soluta minus voluptatum est." <br>
+				</p>
+			</div>
+			<div class="t-2">
+				<img src="./images/in-team-9.png" alt="" width="100%">
+				<h5>Jane Doe</h5>
+				<p>
+					"Lorem ipsum dolor sit, amet <br>
+					adipisicing elit. Maiores fugit ducimus<br>
+					tempore, soluta minus voluptatum est." <br>
+				</p>
+			</div>
+			<div class="t-3">
+				<img src="./images/in-team-3.png" alt="" width="100%">
+				<h5>Jane Doe</h5>
+				<p>
+					"Lorem ipsum dolor sit, amet <br>
+					adipisicing elit. Maiores fugit ducimus<br>
+					tempore, soluta minus voluptatum est." <br>
+				</p>
+			</div>
+		</section>
+		<!-- Testimonials -->
 		<!-- footer starts -->
 		<footer>
 			<div class="footer-1">
@@ -144,5 +216,11 @@
 		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript" src="./js/script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			$(document).ready(function(){
+    			$(".owl-carousel").owlCarousel();
+  			});
+		</script>
 	</body>
 </html>

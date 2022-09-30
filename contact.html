@@ -11,28 +11,156 @@
     <title>Contact Us</title>
 </head>
 <body>
-	<section class="landing-page">
-    	<!-- Nav Bar Section Begins -->
-		<nav>
-			<div class="logo">
-				LOGO
+<!-- Nav Bar Section Begins -->
+<nav>
+	<div class="logo">
+		<img src="./images/green-grocer-PhotoRoom.png" alt="logo" width="100%">
+	</div>
+	<div class="menu-items">
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./about.html">About Us</a></li>
+			<li><a href="./categories.html">Categories</a></li>
+			<li><a href="#" class="active">Contact</a></li>
+		</ul>
+	</div>
+	<div class="call-to-action">
+		<ul>
+			<li><button type="button" class="btn btn-outline-success sign"><a href="./signup.html">Shop now</a></button></li>
+		</ul>
+	</div>
+</nav>
+<!-- Social media links start -->
+<div class="social-media">
+	<ul>
+		<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+		<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+		<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+		<li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+		<li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+	</ul>	
+</div>
+<!-- Mobile nav bar starts -->
+<div class="mobile-nav-bar">
+	<div class="logo">
+		<img src="./images/green-grocer-PhotoRoom.png" alt="logo" width="100%">
+	</div>
+	<i class="fa fa-bars" aria-hidden="true" onclick="toggleSideNav()"></i>
+	<div id="sideNav">	
+		<div class="menu-items">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about.html">About Us</a></li>
+				<li><a href="./categories.html">Categories</a></li>
+				<li><a href="#" class="active">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Mobile nav bar ends -->
+<!-- Nav Bar Section Ends -->
+
+<!-- Contact Section starts -->
+<h2>Contact Us</h2>
+<section class="contact-section">
+	<div class="contact-section-1">
+		<img  class="img-1" src="./images/fruit-1.png" alt="fruit-1" width="100%">
+		<img class="img-2" src="./images/veg-1.png" alt="veg-1" width="100%">
+		<img class="img-3" src="./images/fruit-3.png" alt="fruit-3" width="100%">
+	</div>
+	<div class="contact-section-2">
+		  <!-- Error message Section Begins -->
+		  <div id="errBox">
+			<p id="errText"></p>
+		</div>
+		<!-- error message Section Ends -->
+		<form action="contact.html" method="GET" name="myform" onsubmit="return check_register()">
+			<div class="flex-1">
+				<div>
+					<label for="">First name:</label><br>
+					<input type="text" placeholder="Enter first name" id="fname" name="fname">
+				</div>
+				<div class="flex-1-right">
+					<label for="">Last name:</label><br>
+					<input type="text" placeholder="Enter last name" id="lname" name="lname">
+				</div>
 			</div>
-			<div class="menu-items">
-				<ul>
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./about.html">About Us</a></li>
-					<li><a href="./categories.html">Categories</a></li>
-					<li><a href="#" class="active">Contact</a></li>
-				</ul>
+			<div class="flex-2">
+				<div>
+					<label for="">Email:</label><br>
+                    <input type="text" placeholder="Enter email" id="mail" name="mail">
+				</div>
+				<div class="flex-2-right">
+					<label for="">Phone:</label><br>
+                    <input type="text" placeholder="Enter phone number" id="phone" name="phone">
+				</div>
 			</div>
-			<div class="call-to-action">
-				<ul>
-					<li><button type="button" class="btn btn-outline-success sign"><a href="./signup.html">Show now</a></button></li>
-				</ul>
+			<div class="msg">
+				<textarea name="textbox" id="textbox" cols="76" rows="10"></textarea>
 			</div>
-		</nav>
-		<!-- Nav Bar Section Ends -->
-	</section>
+			<div class="submit">
+				<button class="contact" type="submit">Send</button>
+			</div>
+		</form>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.9690793635036!2d7.363867917443846!3d5.108685600000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042994ee2712e57%3A0x589c773c9a1a391d!2s56%20Azikiwe%20Rd%2C%20Aba%20450101%2C%20Aba!5e0!3m2!1sen!2sng!4v1664536048677!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+</section>
+<!-- Contact Section ends -->
+
+<!-- footer starts -->
+<footer>
+	<div class="footer-1">
+		<h3>STORE INFORMATION</h3>
+		<p>
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<span>My company, 42 Avenue dez</span> <br>
+			Champs Elysees 75000 Paris France <br>
+		</p>
+		<p>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			<span>Call us now: 0123-456-798 </span>
+		</p>
+		<p>
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+			Email: sales@yourcompany.com
+		</p>
+	</div>
+	<div class="footer-2">
+		<h3>INFORMATION</h3>
+		<ul>
+			<li>About us</li>
+			<li>Delivery Information</li>
+			<li>Privacy Policy</li>
+			<li>Terms and Condition</li>
+		</ul>
+	</div>
+	<div class="footer-3">
+		<h3>MY ACCOUNT</h3>
+		<ul>
+			<li>My Orders</li>
+			<li>My credit slips</li>
+			<li>My addresses</li>
+			<li>My personal info</li>
+		</ul>
+	</div>
+	<div class="footer-4">
+		<h3>FOLLOW US</h3>
+		<ul>
+			<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+			<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+			<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			<li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+			<li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+		</ul>
+		<ul>
+			<li><i class="fa fa-cc-visa" aria-hidden="true"></i></li>
+			<li><i class="fa fa-paypal" aria-hidden="true"></i></li>
+			<li><i class="fa fa-cc-mastercard" aria-hidden="true"></i></li>
+		</ul>
+	</div>
+</footer>
+<!-- footer ends -->
 
 
 			<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
