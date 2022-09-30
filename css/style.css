@@ -50,6 +50,17 @@ nav > .menu-items > ul > li > a{
     font-weight: 500px;
     border-bottom: 3px solid transparent;
 }
+nav > .menu-items > ul > li > .active{
+    cursor: pointer;
+    border-bottom: 2px solid #FFFFFF;
+}
+nav > .menu-items > ul > li > a:hover{
+    cursor: pointer;
+    transform: scale(2.5);
+    transition: 0.5s ease-in-out;
+    border-radius: 1px;
+    border-bottom: 2px solid #FFFFFF;
+}
 nav > .call-to-action{
     margin-right: 5em;
 }
@@ -61,15 +72,6 @@ nav > .call-to-action > ul{
 nav > .call-to-action > ul > li{
     list-style: none;
 }
-nav > .call-to-action > ul > li > p{
-    margin-right: 2em;
-    color: #FCFEFE;
-    margin-top: 1.2em;
-}
-nav > .call-to-action > ul > li > p > a{
-    text-decoration: none;
-    color: #FCFEFE;
-}
 nav > .call-to-action > ul > li > button{
     padding: 0.4em 1.2em;
     outline: none;
@@ -78,10 +80,33 @@ nav > .call-to-action > ul > li > button{
     border-radius: 10px;
     cursor: pointer;
 }
+nav > .call-to-action > ul > li > .sign:hover{
+    cursor: pointer;
+    background-color: #386745 !important;
+    border: 1px solid #386745;
+}
 nav > .call-to-action > ul > li > button > a{
     text-decoration: none;
     color: #FCFEFE;
 }
+
+/* :::::::: Mobile Nav bar starts ::::::::::::: */
+.mobile-nav-bar{
+    display: none;
+    padding: 1em;
+}
+
+.mobile-nav-bar > #sideNav{
+    width: 250px;
+    background-color: #386745;
+    height: 100vh;
+    position: fixed;
+    right:-250px;
+    top:0;
+    transition: 1s ease-in-out;
+    color:#ffffff;
+}
+/* :::::::: Mobile Nav bar ends ::::::::::::: */
 /* ::::::::: Nav Bar Section Ends :::::::::::::: */
 
 /* ::::::::: Hero Section Ends :::::::::::::: */
@@ -135,7 +160,12 @@ nav > .call-to-action > ul > li > button > a{
     padding: 0.4em 2em !important;
     border: none !important;
 }
-.hero-section > .hero-section-1 > .category > button > a{
+.hero-section > .hero-section-1 > .category .shop:hover{
+    cursor: pointer;
+    background-color: #458f5a !important;
+    border: 1px solid #458f5a !important;
+}
+.hero-section > .hero-section-1 > .category > .shop > a{
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -147,7 +177,7 @@ nav > .call-to-action > ul > li > button > a{
     width: 40%;
 }
 .hero-section > .hero-section-2 > img{
-    width: 60%;
+    width: 100%;
 }
 /* ::::::::: Hero Section Ends :::::::::::::: */
 
@@ -172,6 +202,169 @@ footer{
     height: auto;
     background-color:#263731;
     color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-footer > .footer-4
+footer > div > h3{
+    color: #386745;
+    margin-top: 0.8em;
+    font-weight: 900;
+}
+footer > .footer-4 > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer > .footer-4 > ul > li{
+    list-style-type: none;
+    margin-right: 1em;
+}
 /*:::::::::: Footer ends :::::::::::::::::::::::::*/
+
+
+/*::::::::::::::::: About Page Starts :::::::::::::::::::*/
+/* About us section starts */
+.about-section > h2{
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.about-section > h5{
+    text-align: center;
+    /* margin-top: 0.8em; */
+    font-weight: bold; 
+    font-size: 2em; 
+    color: #FFFFFF;
+}
+.about-section > .about-section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section > .about-section-1 > p{
+    color: #FFFFFF;
+    margin-left: 5em;
+}
+.about-section > .about-section-1 > img{
+    width: 12%;
+    border-radius: 10px;
+    margin-right: 5em;
+}
+.about-section > .about-section-2{
+    display: flex;
+    justify-content: space-between;
+}
+.about-section > .about-section-2 > p{
+    color: #FFFFFF;
+    margin-right: 5em;
+}
+.about-section > .about-section-2 > img{
+    width: 12%;
+    border-radius: 10px;
+    margin-left: 5em;
+}
+/* About us section ends */
+/* Team section starts */
+.team{
+    height: auto;
+
+}
+.team > h2{
+    text-align: center;
+    margin-top: 0.8em;
+    font-weight: bold;
+}
+/* ::::: Row 1 Starts ::::::::::::*/
+.team > .row-1{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 10px;
+    margin-left: 7em;
+}
+.team > .row-1 > .box-1{
+    height: auto;
+    width: 60%;
+    border: 1px solid #263731;
+    box-shadow: 5px 5px 10px #386745;
+    margin-bottom: 0.5em;
+}
+.team > .row-1 > .box-1 > img{
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    margin-left: 6em;
+}
+.team > .row-1 > .box-1 > h4{
+    text-align: center;
+}
+.team > .row-1 > .box-1 > h3{
+    text-align: center;
+}
+/* :::::: Row 1 ends ::::::::: */
+
+/*::::::::::::: Row 2 starts :::::::::::: */
+.team > .row-2{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 10px;
+    margin-left: 7em;
+}
+.team > .row-2 > .box-2{
+    height: auto;
+    width: 60%;
+    border: 1px solid #263731;
+    box-shadow: 5px 5px 10px #386745;
+    margin-bottom: 0.5em;
+}
+.team > .row-2 > .box-2 > img{
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    margin-left: 6em;
+}
+.team > .row-2 > .box-2 > h4{
+    text-align: center;
+}
+.team > .row-2 > .box-2 > h3{
+    text-align: center;
+}
+/*::::::::::::: Row 2 ends :::::::::::: */
+
+/*::::::::::::: Row 3 starts :::::::::::: */
+.team > .row-3{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 10px;
+    margin-left: 7em;
+}
+.team > .row-3 > .box-3{
+    height: auto;
+    width: 60%;
+    border: 1px solid #263731;
+    box-shadow: 5px 5px 10px #386745;
+    margin-bottom: 1em;
+}
+.team > .row-3 > .box-3 > img{
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    margin-left: 6em;
+}
+.team > .row-3 > .box-3 > h4{
+    text-align: center;
+}
+.team > .row-3 > .box-3 > h3{
+    text-align: center;
+}
+/*::::::::::::: Row 3 ends :::::::::::: */
+/* Team section ends */
+
+
+
